@@ -1,0 +1,165 @@
+{
+    "name": "Controls",
+    "maps": [
+        {
+            "name": "Core",
+            "id": "f2f94a7d-3da5-4bb9-a2d1-8c366958b6c7",
+            "actions": [
+                {
+                    "name": "B11",
+                    "type": "Button",
+                    "id": "4bfe9ada-d4bc-423e-bea4-65c8d8ba5daf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "B2",
+                    "type": "Button",
+                    "id": "9d0c5a63-4910-463e-a799-06819024b590",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "B0",
+                    "type": "Button",
+                    "id": "735b7995-b7f5-4c67-b920-7ea587507e7d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "B1",
+                    "type": "Button",
+                    "id": "55ce10fa-c7da-4d15-86f0-85c88f4a5818",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "JoystickX",
+                    "type": "Value",
+                    "id": "0fe43344-c370-4715-9682-3926e79e56a9",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Traceball",
+                    "type": "Value",
+                    "id": "832c62cd-3332-44b2-9b88-8be9ff862706",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "JoystickY",
+                    "type": "Value",
+                    "id": "d67caaf7-a28c-4144-ac2c-e74afe95c24b",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0547f41f-2dbf-4589-a7cc-5e22e180f726",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B11",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "744dc3ef-a2ab-41cb-89dd-bb329e602d75",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B11",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4ae1455e-2606-4970-b39c-5176f24f8e94",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c85078c5-182a-4aaa-a3df-48bf1cf68d58",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B0",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "64f26460-6723-448c-af5d-731bcdf8bd20",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9d31aa10-c570-4777-af14-0b39dc275ff1",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Traceball",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cc8e5e20-054c-43c4-aa03-965f69093783",
+                    "path": "<Gamepad>/leftStick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickX",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e4220c73-8688-4dee-af0a-258e60208da7",
+                    "path": "<Gamepad>/leftStick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
