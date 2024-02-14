@@ -46,7 +46,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""B0"",
+                    ""name"": ""B4"",
                     ""type"": ""Button"",
                     ""id"": ""735b7995-b7f5-4c67-b920-7ea587507e7d"",
                     ""expectedControlType"": ""Button"",
@@ -143,18 +143,18 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""B0"",
+                    ""action"": ""B4"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""316887f8-03be-40f0-a138-b6eca148e832"",
-                    ""path"": ""<HID::DragonRise Inc.   Generic   USB  Joystick  >/Button 0"",
+                    ""path"": ""<HID::DragonRise Inc.   Generic   USB  Joystick  >/button5"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""B0"",
+                    ""action"": ""B4"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -288,7 +288,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Core = asset.FindActionMap("Core", throwIfNotFound: true);
         m_Core_B11 = m_Core.FindAction("B11", throwIfNotFound: true);
         m_Core_B2 = m_Core.FindAction("B2", throwIfNotFound: true);
-        m_Core_B0 = m_Core.FindAction("B0", throwIfNotFound: true);
+        m_Core_B4 = m_Core.FindAction("B4", throwIfNotFound: true);
         m_Core_B1 = m_Core.FindAction("B1", throwIfNotFound: true);
         m_Core_JoystickX = m_Core.FindAction("JoystickX", throwIfNotFound: true);
         m_Core_Traceball = m_Core.FindAction("Traceball", throwIfNotFound: true);
@@ -356,7 +356,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private List<ICoreActions> m_CoreActionsCallbackInterfaces = new List<ICoreActions>();
     private readonly InputAction m_Core_B11;
     private readonly InputAction m_Core_B2;
-    private readonly InputAction m_Core_B0;
+    private readonly InputAction m_Core_B4;
     private readonly InputAction m_Core_B1;
     private readonly InputAction m_Core_JoystickX;
     private readonly InputAction m_Core_Traceball;
@@ -367,7 +367,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public CoreActions(@Controls wrapper) { m_Wrapper = wrapper; }
         public InputAction @B11 => m_Wrapper.m_Core_B11;
         public InputAction @B2 => m_Wrapper.m_Core_B2;
-        public InputAction @B0 => m_Wrapper.m_Core_B0;
+        public InputAction @B4 => m_Wrapper.m_Core_B4;
         public InputAction @B1 => m_Wrapper.m_Core_B1;
         public InputAction @JoystickX => m_Wrapper.m_Core_JoystickX;
         public InputAction @Traceball => m_Wrapper.m_Core_Traceball;
@@ -387,9 +387,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @B2.started += instance.OnB2;
             @B2.performed += instance.OnB2;
             @B2.canceled += instance.OnB2;
-            @B0.started += instance.OnB0;
-            @B0.performed += instance.OnB0;
-            @B0.canceled += instance.OnB0;
+            @B4.started += instance.OnB4;
+            @B4.performed += instance.OnB4;
+            @B4.canceled += instance.OnB4;
             @B1.started += instance.OnB1;
             @B1.performed += instance.OnB1;
             @B1.canceled += instance.OnB1;
@@ -412,9 +412,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @B2.started -= instance.OnB2;
             @B2.performed -= instance.OnB2;
             @B2.canceled -= instance.OnB2;
-            @B0.started -= instance.OnB0;
-            @B0.performed -= instance.OnB0;
-            @B0.canceled -= instance.OnB0;
+            @B4.started -= instance.OnB4;
+            @B4.performed -= instance.OnB4;
+            @B4.canceled -= instance.OnB4;
             @B1.started -= instance.OnB1;
             @B1.performed -= instance.OnB1;
             @B1.canceled -= instance.OnB1;
@@ -448,7 +448,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     {
         void OnB11(InputAction.CallbackContext context);
         void OnB2(InputAction.CallbackContext context);
-        void OnB0(InputAction.CallbackContext context);
+        void OnB4(InputAction.CallbackContext context);
         void OnB1(InputAction.CallbackContext context);
         void OnJoystickX(InputAction.CallbackContext context);
         void OnTraceball(InputAction.CallbackContext context);

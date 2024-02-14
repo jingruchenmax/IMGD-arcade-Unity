@@ -24,7 +24,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "B0",
+                    "name": "B4",
                     "type": "Button",
                     "id": "735b7995-b7f5-4c67-b920-7ea587507e7d",
                     "expectedControlType": "Button",
@@ -121,18 +121,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "B0",
+                    "action": "B4",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "316887f8-03be-40f0-a138-b6eca148e832",
-                    "path": "<HID::DragonRise Inc.   Generic   USB  Joystick  >/Button 0",
+                    "path": "<HID::DragonRise Inc.   Generic   USB  Joystick  >/button5",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "B0",
+                    "action": "B4",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

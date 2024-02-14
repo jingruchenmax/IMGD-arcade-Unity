@@ -27,7 +27,7 @@ public class GameController : MonoBehaviour
         controls.Enable();
 
         // subscribe to the button click action
-        controls.Core.B0.performed += OnButtonClick;
+        controls.Core.B4.performed += OnButtonClick;
         controls.Core.B1.performed += OnButtonClick;
         controls.Core.B2.performed += OnButtonClick;
         controls.Core.B11.performed += OnButtonClick;
@@ -49,7 +49,7 @@ public class GameController : MonoBehaviour
             case "B2":
                 Buttons[1].GetComponent<Animator>().Play("ButtonAnimation", 0);
                 break;
-            case "B0":
+            case "B4":
                 Buttons[2].GetComponent<Animator>().Play("ButtonAnimation", 0);
                 break;
             case "B1":
