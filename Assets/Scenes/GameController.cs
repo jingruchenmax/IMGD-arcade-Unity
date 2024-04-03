@@ -46,13 +46,13 @@ public class GameController : MonoBehaviour
             case "B11":
                 Buttons[0].GetComponent<Animator>().Play("ButtonAnimation", 0);
                 break;
-            case "B2":
+            case "B4":
                 Buttons[1].GetComponent<Animator>().Play("ButtonAnimation", 0);
                 break;
-            case "B4":
+            case "B1":
                 Buttons[2].GetComponent<Animator>().Play("ButtonAnimation", 0);
                 break;
-            case "B1":
+            case "B2":
                 Buttons[3].GetComponent<Animator>().Play("ButtonAnimation", 0);
                 break;
         }
