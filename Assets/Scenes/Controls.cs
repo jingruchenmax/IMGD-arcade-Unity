@@ -73,7 +73,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Traceball"",
+                    ""name"": ""Trackball"",
                     ""type"": ""Value"",
                     ""id"": ""832c62cd-3332-44b2-9b88-8be9ff862706"",
                     ""expectedControlType"": ""Vector2"",
@@ -187,7 +187,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Traceball"",
+                    ""action"": ""Trackball"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -291,7 +291,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Core_B4 = m_Core.FindAction("B4", throwIfNotFound: true);
         m_Core_B1 = m_Core.FindAction("B1", throwIfNotFound: true);
         m_Core_JoystickX = m_Core.FindAction("JoystickX", throwIfNotFound: true);
-        m_Core_Traceball = m_Core.FindAction("Traceball", throwIfNotFound: true);
+        m_Core_Trackball = m_Core.FindAction("Trackball", throwIfNotFound: true);
         m_Core_JoystickY = m_Core.FindAction("JoystickY", throwIfNotFound: true);
     }
 
@@ -359,7 +359,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Core_B4;
     private readonly InputAction m_Core_B1;
     private readonly InputAction m_Core_JoystickX;
-    private readonly InputAction m_Core_Traceball;
+    private readonly InputAction m_Core_Trackball;
     private readonly InputAction m_Core_JoystickY;
     public struct CoreActions
     {
@@ -370,7 +370,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @B4 => m_Wrapper.m_Core_B4;
         public InputAction @B1 => m_Wrapper.m_Core_B1;
         public InputAction @JoystickX => m_Wrapper.m_Core_JoystickX;
-        public InputAction @Traceball => m_Wrapper.m_Core_Traceball;
+        public InputAction @Trackball => m_Wrapper.m_Core_Trackball;
         public InputAction @JoystickY => m_Wrapper.m_Core_JoystickY;
         public InputActionMap Get() { return m_Wrapper.m_Core; }
         public void Enable() { Get().Enable(); }
@@ -396,9 +396,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @JoystickX.started += instance.OnJoystickX;
             @JoystickX.performed += instance.OnJoystickX;
             @JoystickX.canceled += instance.OnJoystickX;
-            @Traceball.started += instance.OnTraceball;
-            @Traceball.performed += instance.OnTraceball;
-            @Traceball.canceled += instance.OnTraceball;
+            @Trackball.started += instance.OnTrackball;
+            @Trackball.performed += instance.OnTrackball;
+            @Trackball.canceled += instance.OnTrackball;
             @JoystickY.started += instance.OnJoystickY;
             @JoystickY.performed += instance.OnJoystickY;
             @JoystickY.canceled += instance.OnJoystickY;
@@ -421,9 +421,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @JoystickX.started -= instance.OnJoystickX;
             @JoystickX.performed -= instance.OnJoystickX;
             @JoystickX.canceled -= instance.OnJoystickX;
-            @Traceball.started -= instance.OnTraceball;
-            @Traceball.performed -= instance.OnTraceball;
-            @Traceball.canceled -= instance.OnTraceball;
+            @Trackball.started -= instance.OnTrackball;
+            @Trackball.performed -= instance.OnTrackball;
+            @Trackball.canceled -= instance.OnTrackball;
             @JoystickY.started -= instance.OnJoystickY;
             @JoystickY.performed -= instance.OnJoystickY;
             @JoystickY.canceled -= instance.OnJoystickY;
@@ -451,7 +451,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnB4(InputAction.CallbackContext context);
         void OnB1(InputAction.CallbackContext context);
         void OnJoystickX(InputAction.CallbackContext context);
-        void OnTraceball(InputAction.CallbackContext context);
+        void OnTrackball(InputAction.CallbackContext context);
         void OnJoystickY(InputAction.CallbackContext context);
     }
 }

@@ -1239,7 +1239,7 @@ MonoBehaviour:
   - {fileID: 1015769836}
   - {fileID: 30969861}
   joystick: {fileID: 398373994}
-  traceball: {fileID: 905500501}
+  trackball: {fileID: 905500501}
   debug: {fileID: 303565993}
 --- !u!1 &2017035706
 GameObject:

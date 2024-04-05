@@ -51,7 +51,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Traceball",
+                    "name": "Trackball",
                     "type": "Value",
                     "id": "832c62cd-3332-44b2-9b88-8be9ff862706",
                     "expectedControlType": "Vector2",
@@ -165,7 +165,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Traceball",
+                    "action": "Trackball",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

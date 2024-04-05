@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     Vector3[] locations;
     public Controls controls;
     public GameObject joystick;
-    public GameObject traceball;
+    public GameObject trackball;
     public TMPro.TextMeshProUGUI debug;
 
     private void Start()
@@ -33,7 +33,7 @@ public class GameController : MonoBehaviour
         controls.Core.B11.performed += OnButtonClick;
         controls.Core.JoystickX.performed += OnJoystickTriggered;
         controls.Core.JoystickY.performed += OnJoystickTriggered;
-        controls.Core.Traceball.performed += OnTraceballTriggered;
+        controls.Core.Trackball.performed += OnTrackballTriggered;
     }
 
 
@@ -65,9 +65,9 @@ public class GameController : MonoBehaviour
         debug.text = (context.ToString());
 
     }
-    void OnTraceballTriggered(InputAction.CallbackContext context)
+    void OnTrackballTriggered(InputAction.CallbackContext context)
     {
-        traceball.GetComponentInChildren<Animator>().Play("TraceballInteraction", 0);
+        trackball.GetComponentInChildren<Animator>().Play("TrackballInteraction", 0);
         debug.text = (context.ToString());
 
     }
