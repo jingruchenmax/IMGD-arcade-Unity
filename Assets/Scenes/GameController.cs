@@ -5,8 +5,11 @@ using UnityEngine.InputSystem;
 using TMPro;
 public class GameController : MonoBehaviour
 {
-    // B11,B2,B0,B1
-    public GameObject[] Buttons;
+    // B11,B3,B4,B1
+    public GameObject B11;
+    public GameObject B3;
+    public GameObject B4;
+    public GameObject B1;
     Vector3[] locations;
     public Controls controls;
     public GameObject joystick;
@@ -15,22 +18,16 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        // initate locations and location index
-        locations = new Vector3[4];
-        for(int i = 0; i < Buttons.Length; i++)
-        {
-            locations[i] = Buttons[i].transform.position;
-        }
 
         // enable control
         controls = new Controls();
         controls.Enable();
 
         // subscribe to the button click action
+        controls.Core.B11.performed += OnButtonClick;
+        controls.Core.B3.performed += OnButtonClick;
         controls.Core.B4.performed += OnButtonClick;
         controls.Core.B1.performed += OnButtonClick;
-        controls.Core.B2.performed += OnButtonClick;
-        controls.Core.B11.performed += OnButtonClick;
         controls.Core.JoystickX.performed += OnJoystickTriggered;
         controls.Core.JoystickY.performed += OnJoystickTriggered;
         controls.Core.Trackball.performed += OnTrackballTriggered;
@@ -44,16 +41,16 @@ public class GameController : MonoBehaviour
         switch (buttonTriggered)
         {
             case "B11":
-                Buttons[0].GetComponent<Animator>().Play("ButtonAnimation", 0);
+                B11.GetComponent<Animator>().Play("ButtonAnimation", 0);
+                break;
+            case "B3":
+                B3.GetComponent<Animator>().Play("ButtonAnimation", 0);
                 break;
             case "B4":
-                Buttons[1].GetComponent<Animator>().Play("ButtonAnimation", 0);
+                B4.GetComponent<Animator>().Play("ButtonAnimation", 0);
                 break;
             case "B1":
-                Buttons[2].GetComponent<Animator>().Play("ButtonAnimation", 0);
-                break;
-            case "B2":
-                Buttons[3].GetComponent<Animator>().Play("ButtonAnimation", 0);
+                B1.GetComponent<Animator>().Play("ButtonAnimation", 0);
                 break;
         }
 

@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 30969863}
   - component: {fileID: 30969864}
   m_Layer: 0
-  m_Name: B2
+  m_Name: B1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -921,7 +921,7 @@ GameObject:
   - component: {fileID: 1015769838}
   - component: {fileID: 1015769839}
   m_Layer: 0
-  m_Name: B1
+  m_Name: B4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1095,7 +1095,7 @@ GameObject:
   - component: {fileID: 1472412649}
   - component: {fileID: 1472412650}
   m_Layer: 0
-  m_Name: B4
+  m_Name: B3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1233,11 +1233,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3365b54cb0c84fb1947d358bbce4198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Buttons:
-  - {fileID: 2129841541}
-  - {fileID: 1472412647}
-  - {fileID: 1015769836}
-  - {fileID: 30969861}
+  B11: {fileID: 2129841541}
+  B3: {fileID: 1472412647}
+  B4: {fileID: 1015769836}
+  B1: {fileID: 30969861}
   joystick: {fileID: 398373994}
   trackball: {fileID: 905500501}
   debug: {fileID: 303565993}

@@ -37,16 +37,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""B2"",
-                    ""type"": ""Button"",
-                    ""id"": ""9d0c5a63-4910-463e-a799-06819024b590"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""B4"",
+                    ""name"": ""B3"",
                     ""type"": ""Button"",
                     ""id"": ""735b7995-b7f5-4c67-b920-7ea587507e7d"",
                     ""expectedControlType"": ""Button"",
@@ -55,9 +46,18 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""B1"",
+                    ""name"": ""B4"",
                     ""type"": ""Button"",
                     ""id"": ""55ce10fa-c7da-4d15-86f0-85c88f4a5818"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""B1"",
+                    ""type"": ""Button"",
+                    ""id"": ""9d0c5a63-4910-463e-a799-06819024b590"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -116,45 +116,23 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""4ae1455e-2606-4970-b39c-5176f24f8e94"",
-                    ""path"": ""<Keyboard>/l"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""B2"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""ce2115bc-8e4d-4dce-99d9-5ff7b9afca23"",
-                    ""path"": ""<Gamepad>/leftShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""B2"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""c85078c5-182a-4aaa-a3df-48bf1cf68d58"",
                     ""path"": ""<Keyboard>/j"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""B4"",
+                    ""action"": ""B3"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""316887f8-03be-40f0-a138-b6eca148e832"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""B4"",
+                    ""action"": ""B3"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -165,18 +143,18 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""B1"",
+                    ""action"": ""B4"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""fbb77706-4440-452c-acd9-bc60cddc3f79"",
-                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""B1"",
+                    ""action"": ""B4"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -278,6 +256,28 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""JoystickY"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4ae1455e-2606-4970-b39c-5176f24f8e94"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""B1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ce2115bc-8e4d-4dce-99d9-5ff7b9afca23"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""B1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -287,7 +287,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         // Core
         m_Core = asset.FindActionMap("Core", throwIfNotFound: true);
         m_Core_B11 = m_Core.FindAction("B11", throwIfNotFound: true);
-        m_Core_B2 = m_Core.FindAction("B2", throwIfNotFound: true);
+        m_Core_B3 = m_Core.FindAction("B3", throwIfNotFound: true);
         m_Core_B4 = m_Core.FindAction("B4", throwIfNotFound: true);
         m_Core_B1 = m_Core.FindAction("B1", throwIfNotFound: true);
         m_Core_JoystickX = m_Core.FindAction("JoystickX", throwIfNotFound: true);
@@ -355,7 +355,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Core;
     private List<ICoreActions> m_CoreActionsCallbackInterfaces = new List<ICoreActions>();
     private readonly InputAction m_Core_B11;
-    private readonly InputAction m_Core_B2;
+    private readonly InputAction m_Core_B3;
     private readonly InputAction m_Core_B4;
     private readonly InputAction m_Core_B1;
     private readonly InputAction m_Core_JoystickX;
@@ -366,7 +366,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         private @Controls m_Wrapper;
         public CoreActions(@Controls wrapper) { m_Wrapper = wrapper; }
         public InputAction @B11 => m_Wrapper.m_Core_B11;
-        public InputAction @B2 => m_Wrapper.m_Core_B2;
+        public InputAction @B3 => m_Wrapper.m_Core_B3;
         public InputAction @B4 => m_Wrapper.m_Core_B4;
         public InputAction @B1 => m_Wrapper.m_Core_B1;
         public InputAction @JoystickX => m_Wrapper.m_Core_JoystickX;
@@ -384,9 +384,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @B11.started += instance.OnB11;
             @B11.performed += instance.OnB11;
             @B11.canceled += instance.OnB11;
-            @B2.started += instance.OnB2;
-            @B2.performed += instance.OnB2;
-            @B2.canceled += instance.OnB2;
+            @B3.started += instance.OnB3;
+            @B3.performed += instance.OnB3;
+            @B3.canceled += instance.OnB3;
             @B4.started += instance.OnB4;
             @B4.performed += instance.OnB4;
             @B4.canceled += instance.OnB4;
@@ -409,9 +409,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @B11.started -= instance.OnB11;
             @B11.performed -= instance.OnB11;
             @B11.canceled -= instance.OnB11;
-            @B2.started -= instance.OnB2;
-            @B2.performed -= instance.OnB2;
-            @B2.canceled -= instance.OnB2;
+            @B3.started -= instance.OnB3;
+            @B3.performed -= instance.OnB3;
+            @B3.canceled -= instance.OnB3;
             @B4.started -= instance.OnB4;
             @B4.performed -= instance.OnB4;
             @B4.canceled -= instance.OnB4;
@@ -447,7 +447,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     public interface ICoreActions
     {
         void OnB11(InputAction.CallbackContext context);
-        void OnB2(InputAction.CallbackContext context);
+        void OnB3(InputAction.CallbackContext context);
         void OnB4(InputAction.CallbackContext context);
         void OnB1(InputAction.CallbackContext context);
         void OnJoystickX(InputAction.CallbackContext context);
