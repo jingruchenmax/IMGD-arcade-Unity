@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
-public class GameController : MonoBehaviour
+public class ArcadeControlTest : MonoBehaviour
 {
     // B11,B3,B4,B1
     public GameObject B11;
