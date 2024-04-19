@@ -10,8 +10,7 @@ public class GameController : MonoBehaviour
     public GameObject B3;
     public GameObject B4;
     public GameObject B1;
-    Vector3[] locations;
-    public Controls controls;
+    public ArcadeControl arcadeControl;
     public GameObject joystick;
     public GameObject trackball;
     public TMPro.TextMeshProUGUI debug;
@@ -20,17 +19,17 @@ public class GameController : MonoBehaviour
     {
 
         // enable control
-        controls = new Controls();
-        controls.Enable();
+        arcadeControl = new ArcadeControl();
+        arcadeControl.Enable();
 
         // subscribe to the button click action
-        controls.Core.B11.performed += OnButtonClick;
-        controls.Core.B3.performed += OnButtonClick;
-        controls.Core.B4.performed += OnButtonClick;
-        controls.Core.B1.performed += OnButtonClick;
-        controls.Core.JoystickX.performed += OnJoystickTriggered;
-        controls.Core.JoystickY.performed += OnJoystickTriggered;
-        controls.Core.Trackball.performed += OnTrackballTriggered;
+        arcadeControl.Core.B11.performed += OnButtonClick;
+        arcadeControl.Core.B3.performed += OnButtonClick;
+        arcadeControl.Core.B4.performed += OnButtonClick;
+        arcadeControl.Core.B1.performed += OnButtonClick;
+        arcadeControl.Core.JoystickX.performed += OnJoystickTriggered;
+        arcadeControl.Core.JoystickY.performed += OnJoystickTriggered;
+        arcadeControl.Core.Trackball.performed += OnTrackballTriggered;
     }
 
 
