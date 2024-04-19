@@ -1,12 +1,12 @@
 {
-    "name": "Controls",
+    "name": "ArcadeControl",
     "maps": [
         {
             "name": "Core",
             "id": "f2f94a7d-3da5-4bb9-a2d1-8c366958b6c7",
             "actions": [
                 {
-                    "name": "B11",
+                    "name": "Home",
                     "type": "Button",
                     "id": "4bfe9ada-d4bc-423e-bea4-65c8d8ba5daf",
                     "expectedControlType": "Button",
@@ -15,7 +15,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "B3",
+                    "name": "J",
                     "type": "Button",
                     "id": "735b7995-b7f5-4c67-b920-7ea587507e7d",
                     "expectedControlType": "Button",
@@ -24,7 +24,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "B4",
+                    "name": "K",
                     "type": "Button",
                     "id": "55ce10fa-c7da-4d15-86f0-85c88f4a5818",
                     "expectedControlType": "Button",
@@ -33,7 +33,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "B1",
+                    "name": "L",
                     "type": "Button",
                     "id": "9d0c5a63-4910-463e-a799-06819024b590",
                     "expectedControlType": "Button",
@@ -51,19 +51,19 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Trackball",
+                    "name": "JoystickY",
                     "type": "Value",
-                    "id": "832c62cd-3332-44b2-9b88-8be9ff862706",
-                    "expectedControlType": "Vector2",
+                    "id": "d67caaf7-a28c-4144-ac2c-e74afe95c24b",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "JoystickY",
+                    "name": "Trackball",
                     "type": "Value",
-                    "id": "d67caaf7-a28c-4144-ac2c-e74afe95c24b",
-                    "expectedControlType": "Axis",
+                    "id": "832c62cd-3332-44b2-9b88-8be9ff862706",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -77,7 +77,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "B11",
+                    "action": "Home",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -88,7 +88,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "B11",
+                    "action": "Home",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -99,7 +99,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "B3",
+                    "action": "J",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -110,7 +110,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "B3",
+                    "action": "J",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -121,7 +121,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "B4",
+                    "action": "K",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -132,18 +132,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "B4",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "9d31aa10-c570-4777-af14-0b39dc275ff1",
-                    "path": "<Mouse>/position",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Trackball",
+                    "action": "K",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -242,7 +231,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "B1",
+                    "action": "L",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -253,7 +242,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "B1",
+                    "action": "L",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9d31aa10-c570-4777-af14-0b39dc275ff1",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Trackball",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
