@@ -33,7 +33,7 @@ public class InputControllerSample : MonoBehaviour
     void OnButtonClick(InputAction.CallbackContext context)
     {
         string buttonTriggered = context.action.name;
-        debug.text = (context.ToString());
+        UpdateDebugText(context);
         switch (buttonTriggered)
         {
             case "Home":
@@ -54,12 +54,17 @@ public class InputControllerSample : MonoBehaviour
     void OnJoystickTriggered(InputAction.CallbackContext context)
     {
         joystick.GetComponentInChildren<Animator>().Play("JoystickInteraction", 0);
-        debug.text = (context.ToString());
+        UpdateDebugText(context);
     }
     
     void OnTrackballTriggered(InputAction.CallbackContext context)
     {
         trackball.GetComponentInChildren<Animator>().Play("TrackballInteraction", 0);
-        debug.text = (context.ToString());
+        UpdateDebugText(context);
+    }
+
+    void UpdateDebugText(InputAction.CallbackContext context) {
+
+        debug.text = $"IsArcadeMachine: {ArcadeDetector.IsArcadeMachine}\nInputCallbackContext: {context}";
     }
 }
