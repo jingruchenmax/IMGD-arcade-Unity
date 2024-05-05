@@ -1,6 +1,6 @@
 
 mergeInto(LibraryManager.library, {
   CheckIsArcadeMachine: function () {
-    return isArcadeMachine == true;
+    return (globalThis.isArcadeMachine == true) || (parent.isArcadeMachine == true);
   },
 });
