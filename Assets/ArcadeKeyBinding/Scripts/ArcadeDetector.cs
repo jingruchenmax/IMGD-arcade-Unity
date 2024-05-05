@@ -9,7 +9,7 @@ public static class ArcadeDetector
     public static bool IsArcadeMachine => m_isArcadeMachine;
 
 #if UNITY_WEBGL && !UNITY_EDITOR
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]
     public static void DetectArcade() {
         m_isArcadeMachine = CheckIsArcadeMachine();
     }
