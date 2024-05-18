@@ -24,7 +24,7 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
     ""name"": ""ArcadeControl"",
     ""maps"": [
         {
-            ""name"": ""Core"",
+            ""name"": ""PC"",
             ""id"": ""f2f94a7d-3da5-4bb9-a2d1-8c366958b6c7"",
             ""actions"": [
                 {
@@ -98,7 +98,7 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Home"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -106,10 +106,10 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""744dc3ef-a2ab-41cb-89dd-bb329e602d75"",
-                    ""path"": ""<Gamepad>/rightStickPress"",
+                    ""path"": ""<Gamepad>/start"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Home"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -120,7 +120,7 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/j"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""J"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -128,10 +128,10 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""316887f8-03be-40f0-a138-b6eca148e832"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""path"": ""<Gamepad>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""IMGDArcade"",
                     ""action"": ""J"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -142,7 +142,7 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/k"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""K"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -150,10 +150,10 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""fbb77706-4440-452c-acd9-bc60cddc3f79"",
-                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""path"": ""<Gamepad>/buttonEast"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""IMGDArcade"",
                     ""action"": ""K"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -164,7 +164,7 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/leftStick/x"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""IMGDArcade"",
                     ""action"": ""JoystickX"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -186,7 +186,7 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""JoystickX"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -197,7 +197,7 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""JoystickX"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -208,7 +208,7 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/leftStick/y"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""IMGDArcade"",
                     ""action"": ""JoystickY"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -230,7 +230,7 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""JoystickY"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -241,7 +241,7 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""JoystickY"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -252,7 +252,7 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/l"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""L"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -260,10 +260,10 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""ce2115bc-8e4d-4dce-99d9-5ff7b9afca23"",
-                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""IMGDArcade"",
                     ""action"": ""L"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -274,7 +274,166 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
                     ""path"": ""<Mouse>/position"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""IMGDArcade;Keyboard"",
+                    ""action"": ""Trackball"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ec337ae4-c184-4f9d-8e67-f0321cfaca6a"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Trackball"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Arcade"",
+            ""id"": ""2834dcca-ddff-4079-bdeb-1e792cb6ce0f"",
+            ""actions"": [
+                {
+                    ""name"": ""Home"",
+                    ""type"": ""Button"",
+                    ""id"": ""5fe9ec4d-8aa7-4f4b-9c72-b47083afe544"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""J"",
+                    ""type"": ""Button"",
+                    ""id"": ""f8f88612-f2d4-4a49-9a27-be6d9fc739fe"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""K"",
+                    ""type"": ""Button"",
+                    ""id"": ""e6e709c6-8382-4c11-a83c-4b8a99333fe9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""L"",
+                    ""type"": ""Button"",
+                    ""id"": ""a984bce7-9820-4ccf-bf91-c440730a606f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""JoystickX"",
+                    ""type"": ""Value"",
+                    ""id"": ""dae5bbbb-4df9-47bd-a55a-52f3b46281df"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""JoystickY"",
+                    ""type"": ""Value"",
+                    ""id"": ""efa1fdd1-3149-4813-adde-89cc08ff9ae2"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Trackball"",
+                    ""type"": ""Value"",
+                    ""id"": ""6f6bf5e8-81eb-4e53-9bc1-0f9918c54e64"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""9c000265-b337-4a99-918e-2ad0112e28cc"",
+                    ""path"": ""<Gamepad>/rightStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""IMGDArcade"",
+                    ""action"": ""Home"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""be9bb6b0-991a-4ee1-a68f-05497e7be7d0"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""IMGDArcade"",
+                    ""action"": ""J"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""448a202d-23b3-48aa-97bc-0a2a3545bfe3"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""IMGDArcade"",
+                    ""action"": ""K"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""685cc53e-8cf3-418a-a080-2f8295dac4e6"",
+                    ""path"": ""<Gamepad>/leftStick/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""IMGDArcade"",
+                    ""action"": ""JoystickX"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""27ace11b-dd8f-4669-a7a4-ba331eef3b33"",
+                    ""path"": ""<Gamepad>/leftStick/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""IMGDArcade"",
+                    ""action"": ""JoystickY"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ab56fe8e-8bd1-4807-b389-438fe311b9d6"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""IMGDArcade"",
+                    ""action"": ""L"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d1bd20b7-7593-4f7a-af6d-9c4e837546f0"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""IMGDArcade"",
                     ""action"": ""Trackball"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -282,17 +441,60 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
             ]
         }
     ],
-    ""controlSchemes"": []
+    ""controlSchemes"": [
+        {
+            ""name"": ""IMGDArcade"",
+            ""bindingGroup"": ""IMGDArcade"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Gamepad>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Keyboard"",
+            ""bindingGroup"": ""Keyboard"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Gamepad"",
+            ""bindingGroup"": ""Gamepad"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Gamepad>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        }
+    ]
 }");
-        // Core
-        m_Core = asset.FindActionMap("Core", throwIfNotFound: true);
-        m_Core_Home = m_Core.FindAction("Home", throwIfNotFound: true);
-        m_Core_J = m_Core.FindAction("J", throwIfNotFound: true);
-        m_Core_K = m_Core.FindAction("K", throwIfNotFound: true);
-        m_Core_L = m_Core.FindAction("L", throwIfNotFound: true);
-        m_Core_JoystickX = m_Core.FindAction("JoystickX", throwIfNotFound: true);
-        m_Core_JoystickY = m_Core.FindAction("JoystickY", throwIfNotFound: true);
-        m_Core_Trackball = m_Core.FindAction("Trackball", throwIfNotFound: true);
+        // PC
+        m_PC = asset.FindActionMap("PC", throwIfNotFound: true);
+        m_PC_Home = m_PC.FindAction("Home", throwIfNotFound: true);
+        m_PC_J = m_PC.FindAction("J", throwIfNotFound: true);
+        m_PC_K = m_PC.FindAction("K", throwIfNotFound: true);
+        m_PC_L = m_PC.FindAction("L", throwIfNotFound: true);
+        m_PC_JoystickX = m_PC.FindAction("JoystickX", throwIfNotFound: true);
+        m_PC_JoystickY = m_PC.FindAction("JoystickY", throwIfNotFound: true);
+        m_PC_Trackball = m_PC.FindAction("Trackball", throwIfNotFound: true);
+        // Arcade
+        m_Arcade = asset.FindActionMap("Arcade", throwIfNotFound: true);
+        m_Arcade_Home = m_Arcade.FindAction("Home", throwIfNotFound: true);
+        m_Arcade_J = m_Arcade.FindAction("J", throwIfNotFound: true);
+        m_Arcade_K = m_Arcade.FindAction("K", throwIfNotFound: true);
+        m_Arcade_L = m_Arcade.FindAction("L", throwIfNotFound: true);
+        m_Arcade_JoystickX = m_Arcade.FindAction("JoystickX", throwIfNotFound: true);
+        m_Arcade_JoystickY = m_Arcade.FindAction("JoystickY", throwIfNotFound: true);
+        m_Arcade_Trackball = m_Arcade.FindAction("Trackball", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -351,36 +553,36 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // Core
-    private readonly InputActionMap m_Core;
-    private List<ICoreActions> m_CoreActionsCallbackInterfaces = new List<ICoreActions>();
-    private readonly InputAction m_Core_Home;
-    private readonly InputAction m_Core_J;
-    private readonly InputAction m_Core_K;
-    private readonly InputAction m_Core_L;
-    private readonly InputAction m_Core_JoystickX;
-    private readonly InputAction m_Core_JoystickY;
-    private readonly InputAction m_Core_Trackball;
-    public struct CoreActions
+    // PC
+    private readonly InputActionMap m_PC;
+    private List<IPCActions> m_PCActionsCallbackInterfaces = new List<IPCActions>();
+    private readonly InputAction m_PC_Home;
+    private readonly InputAction m_PC_J;
+    private readonly InputAction m_PC_K;
+    private readonly InputAction m_PC_L;
+    private readonly InputAction m_PC_JoystickX;
+    private readonly InputAction m_PC_JoystickY;
+    private readonly InputAction m_PC_Trackball;
+    public struct PCActions
     {
         private @ArcadeControl m_Wrapper;
-        public CoreActions(@ArcadeControl wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Home => m_Wrapper.m_Core_Home;
-        public InputAction @J => m_Wrapper.m_Core_J;
-        public InputAction @K => m_Wrapper.m_Core_K;
-        public InputAction @L => m_Wrapper.m_Core_L;
-        public InputAction @JoystickX => m_Wrapper.m_Core_JoystickX;
-        public InputAction @JoystickY => m_Wrapper.m_Core_JoystickY;
-        public InputAction @Trackball => m_Wrapper.m_Core_Trackball;
-        public InputActionMap Get() { return m_Wrapper.m_Core; }
+        public PCActions(@ArcadeControl wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Home => m_Wrapper.m_PC_Home;
+        public InputAction @J => m_Wrapper.m_PC_J;
+        public InputAction @K => m_Wrapper.m_PC_K;
+        public InputAction @L => m_Wrapper.m_PC_L;
+        public InputAction @JoystickX => m_Wrapper.m_PC_JoystickX;
+        public InputAction @JoystickY => m_Wrapper.m_PC_JoystickY;
+        public InputAction @Trackball => m_Wrapper.m_PC_Trackball;
+        public InputActionMap Get() { return m_Wrapper.m_PC; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(CoreActions set) { return set.Get(); }
-        public void AddCallbacks(ICoreActions instance)
+        public static implicit operator InputActionMap(PCActions set) { return set.Get(); }
+        public void AddCallbacks(IPCActions instance)
         {
-            if (instance == null || m_Wrapper.m_CoreActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_CoreActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_PCActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PCActionsCallbackInterfaces.Add(instance);
             @Home.started += instance.OnHome;
             @Home.performed += instance.OnHome;
             @Home.canceled += instance.OnHome;
@@ -404,7 +606,7 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
             @Trackball.canceled += instance.OnTrackball;
         }
 
-        private void UnregisterCallbacks(ICoreActions instance)
+        private void UnregisterCallbacks(IPCActions instance)
         {
             @Home.started -= instance.OnHome;
             @Home.performed -= instance.OnHome;
@@ -429,22 +631,153 @@ public partial class @ArcadeControl: IInputActionCollection2, IDisposable
             @Trackball.canceled -= instance.OnTrackball;
         }
 
-        public void RemoveCallbacks(ICoreActions instance)
+        public void RemoveCallbacks(IPCActions instance)
         {
-            if (m_Wrapper.m_CoreActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_PCActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(ICoreActions instance)
+        public void SetCallbacks(IPCActions instance)
         {
-            foreach (var item in m_Wrapper.m_CoreActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_PCActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_CoreActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_PCActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public CoreActions @Core => new CoreActions(this);
-    public interface ICoreActions
+    public PCActions @PC => new PCActions(this);
+
+    // Arcade
+    private readonly InputActionMap m_Arcade;
+    private List<IArcadeActions> m_ArcadeActionsCallbackInterfaces = new List<IArcadeActions>();
+    private readonly InputAction m_Arcade_Home;
+    private readonly InputAction m_Arcade_J;
+    private readonly InputAction m_Arcade_K;
+    private readonly InputAction m_Arcade_L;
+    private readonly InputAction m_Arcade_JoystickX;
+    private readonly InputAction m_Arcade_JoystickY;
+    private readonly InputAction m_Arcade_Trackball;
+    public struct ArcadeActions
+    {
+        private @ArcadeControl m_Wrapper;
+        public ArcadeActions(@ArcadeControl wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Home => m_Wrapper.m_Arcade_Home;
+        public InputAction @J => m_Wrapper.m_Arcade_J;
+        public InputAction @K => m_Wrapper.m_Arcade_K;
+        public InputAction @L => m_Wrapper.m_Arcade_L;
+        public InputAction @JoystickX => m_Wrapper.m_Arcade_JoystickX;
+        public InputAction @JoystickY => m_Wrapper.m_Arcade_JoystickY;
+        public InputAction @Trackball => m_Wrapper.m_Arcade_Trackball;
+        public InputActionMap Get() { return m_Wrapper.m_Arcade; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(ArcadeActions set) { return set.Get(); }
+        public void AddCallbacks(IArcadeActions instance)
+        {
+            if (instance == null || m_Wrapper.m_ArcadeActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_ArcadeActionsCallbackInterfaces.Add(instance);
+            @Home.started += instance.OnHome;
+            @Home.performed += instance.OnHome;
+            @Home.canceled += instance.OnHome;
+            @J.started += instance.OnJ;
+            @J.performed += instance.OnJ;
+            @J.canceled += instance.OnJ;
+            @K.started += instance.OnK;
+            @K.performed += instance.OnK;
+            @K.canceled += instance.OnK;
+            @L.started += instance.OnL;
+            @L.performed += instance.OnL;
+            @L.canceled += instance.OnL;
+            @JoystickX.started += instance.OnJoystickX;
+            @JoystickX.performed += instance.OnJoystickX;
+            @JoystickX.canceled += instance.OnJoystickX;
+            @JoystickY.started += instance.OnJoystickY;
+            @JoystickY.performed += instance.OnJoystickY;
+            @JoystickY.canceled += instance.OnJoystickY;
+            @Trackball.started += instance.OnTrackball;
+            @Trackball.performed += instance.OnTrackball;
+            @Trackball.canceled += instance.OnTrackball;
+        }
+
+        private void UnregisterCallbacks(IArcadeActions instance)
+        {
+            @Home.started -= instance.OnHome;
+            @Home.performed -= instance.OnHome;
+            @Home.canceled -= instance.OnHome;
+            @J.started -= instance.OnJ;
+            @J.performed -= instance.OnJ;
+            @J.canceled -= instance.OnJ;
+            @K.started -= instance.OnK;
+            @K.performed -= instance.OnK;
+            @K.canceled -= instance.OnK;
+            @L.started -= instance.OnL;
+            @L.performed -= instance.OnL;
+            @L.canceled -= instance.OnL;
+            @JoystickX.started -= instance.OnJoystickX;
+            @JoystickX.performed -= instance.OnJoystickX;
+            @JoystickX.canceled -= instance.OnJoystickX;
+            @JoystickY.started -= instance.OnJoystickY;
+            @JoystickY.performed -= instance.OnJoystickY;
+            @JoystickY.canceled -= instance.OnJoystickY;
+            @Trackball.started -= instance.OnTrackball;
+            @Trackball.performed -= instance.OnTrackball;
+            @Trackball.canceled -= instance.OnTrackball;
+        }
+
+        public void RemoveCallbacks(IArcadeActions instance)
+        {
+            if (m_Wrapper.m_ArcadeActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IArcadeActions instance)
+        {
+            foreach (var item in m_Wrapper.m_ArcadeActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_ArcadeActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public ArcadeActions @Arcade => new ArcadeActions(this);
+    private int m_IMGDArcadeSchemeIndex = -1;
+    public InputControlScheme IMGDArcadeScheme
+    {
+        get
+        {
+            if (m_IMGDArcadeSchemeIndex == -1) m_IMGDArcadeSchemeIndex = asset.FindControlSchemeIndex("IMGDArcade");
+            return asset.controlSchemes[m_IMGDArcadeSchemeIndex];
+        }
+    }
+    private int m_KeyboardSchemeIndex = -1;
+    public InputControlScheme KeyboardScheme
+    {
+        get
+        {
+            if (m_KeyboardSchemeIndex == -1) m_KeyboardSchemeIndex = asset.FindControlSchemeIndex("Keyboard");
+            return asset.controlSchemes[m_KeyboardSchemeIndex];
+        }
+    }
+    private int m_GamepadSchemeIndex = -1;
+    public InputControlScheme GamepadScheme
+    {
+        get
+        {
+            if (m_GamepadSchemeIndex == -1) m_GamepadSchemeIndex = asset.FindControlSchemeIndex("Gamepad");
+            return asset.controlSchemes[m_GamepadSchemeIndex];
+        }
+    }
+    public interface IPCActions
+    {
+        void OnHome(InputAction.CallbackContext context);
+        void OnJ(InputAction.CallbackContext context);
+        void OnK(InputAction.CallbackContext context);
+        void OnL(InputAction.CallbackContext context);
+        void OnJoystickX(InputAction.CallbackContext context);
+        void OnJoystickY(InputAction.CallbackContext context);
+        void OnTrackball(InputAction.CallbackContext context);
+    }
+    public interface IArcadeActions
     {
         void OnHome(InputAction.CallbackContext context);
         void OnJ(InputAction.CallbackContext context);

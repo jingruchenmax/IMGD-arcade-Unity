@@ -13,20 +13,38 @@ public class InputControllerSample : MonoBehaviour
     public GameObject trackball;
     public TMPro.TextMeshProUGUI debug;
 
-    private void Start()
+    private void Awake()
     {
-        // enable control
         arcadeControl = new ArcadeControl();
         arcadeControl.Enable();
 
+        if (ArcadeDetector.IsArcadeMachine)
+        {
+            arcadeControl.PC.Disable();
+            arcadeControl.Arcade.Enable();
+        }
+        else
+        {
+            arcadeControl.PC.Enable();
+            arcadeControl.Arcade.Disable();
+        }
+
         // subscribe to the button click action
-        arcadeControl.Core.Home.performed += OnButtonClick;
-        arcadeControl.Core.J.performed += OnButtonClick;
-        arcadeControl.Core.K.performed += OnButtonClick;
-        arcadeControl.Core.L.performed += OnButtonClick;
-        arcadeControl.Core.JoystickX.performed += OnJoystickTriggered;
-        arcadeControl.Core.JoystickY.performed += OnJoystickTriggered;
-        arcadeControl.Core.Trackball.performed += OnTrackballTriggered;
+        arcadeControl.PC.Home.performed += OnButtonClick;
+        arcadeControl.PC.J.performed += OnButtonClick;
+        arcadeControl.PC.K.performed += OnButtonClick;
+        arcadeControl.PC.L.performed += OnButtonClick;
+        arcadeControl.PC.JoystickX.performed += OnJoystickTriggered;
+        arcadeControl.PC.JoystickY.performed += OnJoystickTriggered;
+        arcadeControl.PC.Trackball.performed += OnTrackballTriggered;
+
+        arcadeControl.Arcade.Home.performed += OnButtonClick;
+        arcadeControl.Arcade.J.performed += OnButtonClick;
+        arcadeControl.Arcade.K.performed += OnButtonClick;
+        arcadeControl.Arcade.L.performed += OnButtonClick;
+        arcadeControl.Arcade.JoystickX.performed += OnJoystickTriggered;
+        arcadeControl.Arcade.JoystickY.performed += OnJoystickTriggered;
+        arcadeControl.Arcade.Trackball.performed += OnTrackballTriggered;
     }
 
 
